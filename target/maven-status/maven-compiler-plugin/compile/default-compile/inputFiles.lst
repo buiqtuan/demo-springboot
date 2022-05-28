@@ -1,0 +1,16 @@
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/controller/ApiStatus.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/domain/LoadChatDataDomain.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/task/AutoFetchDataTask.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/entity/ChatInfo.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/adapter/LoadChatDataAdapter.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/service/DataFilteringService.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/usecase/GetDataFromCache.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/service/CachingService.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/controller/request/GetChatInfoRequest.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/config/BeanContainer.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/MainApplication.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/usecase/FilterChatInfoBy.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/controller/response/GetChatInfoResponse.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/model/ChatInfoWithNoDateModel.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/usecase/LoadDataToCache.java
+/Users/tuanbq/workspaces/opensource/tawk-test/interview-test/src/main/java/com/tawk/fun/controller/WebChatInfoController.java
