@@ -23,4 +23,4 @@ Execute command: **mvn clean package spring-boot:repackage**
 
 # Local run
 
-In target folder after successfully built, execute command **java -jar interview-test-1.0-SNAPSHOT.jar**
+In target folder after successfully built, execute command: **java -jar interview-test-1.0-SNAPSHOT.jar**
