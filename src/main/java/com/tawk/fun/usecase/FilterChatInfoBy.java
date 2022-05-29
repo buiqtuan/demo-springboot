@@ -7,11 +7,9 @@ import java.util.List;
 
 public interface FilterChatInfoBy {
 
-    List<ChatInfo> fromDateToDate(OffsetDateTime from, OffsetDateTime to);
+    List<ChatInfo> fromDateToDate(List<ChatInfo> chatInfoList, OffsetDateTime from, OffsetDateTime to);
 
-    List<ChatInfo> fromDate(OffsetDateTime from);
+    List<ChatInfo> fromDate(List<ChatInfo> chatInfoList,OffsetDateTime from);
 
-    List<ChatInfo> toDate(OffsetDateTime to);
-
-    List<ChatInfo> none();
+    List<ChatInfo> toDate(List<ChatInfo> chatInfoList,OffsetDateTime to);
 }

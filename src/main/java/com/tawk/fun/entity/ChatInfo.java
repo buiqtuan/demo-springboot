@@ -3,15 +3,15 @@ package com.tawk.fun.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class ChatInfo {
     @JsonProperty("websiteId")
     private String websiteId;
@@ -26,8 +26,8 @@ public class ChatInfo {
     private String missedChats;
 
     public OffsetDateTime getDate(DateTimeFormatter formatter) {
-        var ldt = LocalDateTime.parse(this.date, formatter);
+        var ld = LocalDate.parse(this.date, formatter);
 
-        return OffsetDateTime.of(ldt, ZoneOffset.UTC);
+        return OffsetDateTime.of(ld, LocalTime.NOON, ZoneOffset.UTC);
     }
 }

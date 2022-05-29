@@ -10,8 +10,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.PostConstruct;
 import java.time.Duration;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.temporal.ChronoField;
 
 @Configuration
 @EnableCaching
@@ -21,8 +24,8 @@ public class BeanContainer {
     private String CACHE_NAME_CHAT_INFO_LIST;
 
     @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
-        return builder
+    public RestTemplate restTemplate() {
+        return (new RestTemplateBuilder())
                 .setConnectTimeout(Duration.ofMillis(10000))
                 .build();
     }
@@ -39,11 +42,15 @@ public class BeanContainer {
 
     @Bean
     public DateTimeFormatter dateTimeFormatter() {
-        return DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'");
+        DateTimeFormatter dtf = new DateTimeFormatterBuilder()
+                .appendPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
+                .toFormatter();
+
+        return dtf;
     }
 
     @Bean
     public DateTimeFormatter dateTimeFormatterYYYYMMDD() {
-        return DateTimeFormatter.ofPattern("yyyyMMdd");
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd");
     }
 }

@@ -17,12 +17,13 @@ public class AutoFetchDataTask {
         this.loadDataToCache = loadDataToCache;
     }
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 30000)
     public void startFetching() {
         log.info(".........................START JOB FETCHING DATA FROM SOURCE.........................");
 
         try {
-            this.loadDataToCache.loadChatInfoToCache();
+            var chatInforList = this.loadDataToCache.loadChatInfoToCache();
+            log.info("chatInforList size:" + chatInforList.size());
         } catch (Exception e) {
             log.error("AutoFetchDataTask.startFetching",e);
         }
