@@ -1,5 +1,5 @@
-# tawk-test
-A demo project for tawk recruitment team.
+# Simple SpringBoot App
+A demo project for online recruitment teams.
 
 # Description
 
